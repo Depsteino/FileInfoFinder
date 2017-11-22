@@ -1,6 +1,11 @@
-require "bundler/gem_tasks"
-require 'rspec/core/rake_task'
+require 'rake/testtask'
 
-RSpec::Core::RakeTask.new
+task :default => [:test]
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'test'
 
-task :default => :spec
+  # ensure the sample test file is included here
+  test.test_files = FileList['main.rb']
+
+  test.verbose = true
+end
