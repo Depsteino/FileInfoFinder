@@ -1,6 +1,3 @@
 language: ruby
-group :test do
-  gem 'rake'
-end
 rvm:
  - 2.2
