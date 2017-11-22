@@ -5,7 +5,7 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'test'
 
   # ensure the sample test file is included here
-  test.test_files = FileList['main.rb']
+  test.test_files = FileList['main.rb mydata.txt']
 
   test.verbose = true
 end
