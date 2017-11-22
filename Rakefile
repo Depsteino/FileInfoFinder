@@ -1,11 +1,3 @@
-require 'rake/testtask'
-
-task :default => [:test]
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'test'
-
-  # ensure the sample test file is included here
-  test.test_files = FileList['main.rb mydata.txt']
-
-  test.verbose = true
-end
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+task :default => :spec
