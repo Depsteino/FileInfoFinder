@@ -5,6 +5,7 @@ require_relative '../main.rb'
     it "does something" do
   arg = "../mydata.txt"
   file = File.expand_path('../mydata.txt', File.dirname(__FILE__))
+      put "test"
 end
 end
 
