@@ -3,10 +3,9 @@ require_relative '../main.rb'
 
 
   describe '#FindPath' do
-    it "does something" do
-  _FILE__ = '../mydata.txt'
-  file = File.expand_path('../mydata.txt', File.dirname(__FILE__))
-      expect(FindPath(file)).to eq "mydata.txt"
+ it 'should read YAML-formatted data from a file' do
+    
+    expect(FindPath('..mydata.txt')).to eq "mydata.txt"
 end
 end
 
