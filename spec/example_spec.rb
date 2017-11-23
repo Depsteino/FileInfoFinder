@@ -1,6 +1,6 @@
 require 'spec_helper'
 require_relative '../main.rb'
-require_relative '../mydata.txt'
+
 
   describe '#FindPath' do
     it "does something" do
