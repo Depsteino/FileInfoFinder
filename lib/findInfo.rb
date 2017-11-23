@@ -24,7 +24,7 @@ require 'digest/md5' # Enables to digest a file
 
           exit 1;   
         end
-       puts "Canno't find the file..."
+       puts "File does not exist!"
       end
    end
    
