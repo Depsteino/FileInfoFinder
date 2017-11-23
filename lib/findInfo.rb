@@ -24,7 +24,7 @@ require 'digest/md5' # Enables to digest a file
 
           exit 1;   
         end
-       puts "mydata.txt"
+       puts "Canno't find the file..."
       end
    end
    
