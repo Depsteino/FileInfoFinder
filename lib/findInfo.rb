@@ -16,14 +16,14 @@ require 'digest/md5' # Enables to digest a file
 
       if ARGV[0]
         
-        
+         if File.exist?(comp)
     
           puts comp
 
           return comp
 
           exit 1;   
-        
+         end
        puts "File does not exist!"
       end
    end
