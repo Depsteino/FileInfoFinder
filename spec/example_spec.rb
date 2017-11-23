@@ -7,7 +7,7 @@ require_relative '../main.rb'
      allow_any_instance_of(Object).
       to receive(:FindPath).with('mydata.txt')
     
-    expect(FindPath('../mydata.txt')).to eq "mydata.txt"
+    expect(FindPath('mydata.txt')).to eq "mydata.txt"
 end
 end
 
