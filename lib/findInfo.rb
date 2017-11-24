@@ -1,4 +1,5 @@
 require 'digest/md5' # Enables to digest a file
+require 'pathname'
 
 # The arguments for these functions is the command-line first element ***
 
@@ -6,25 +7,13 @@ require 'digest/md5' # Enables to digest a file
  # For example: given a path like "/home/kim/mydata.txt", return "mydata.txt"
 
     def FindPath(x)
-      if ARGV.empty?
-        puts "No argument entered..."
-        exit 1
-      end
-    
-      file = ARGV[0]
+      file = x
       comp = File.basename file        # => "mydata.txt"
-
-      if ARGV[0]
-        
+      
          if File.exist?(comp)
-    
           puts comp
-
           return comp
-
           exit 1;   
-         end
-       puts "File does not exist!"
       end
    end
    
@@ -32,55 +21,39 @@ require 'digest/md5' # Enables to digest a file
  # For example, given a path like "/home/kim/mydata.txt", return 129 (e.g., the file is 129 bytes on disk) 
 
    def FindSize(x)
-    file = ARGV[0]
-    comp = File.basename file        # => "mydata.txt"
-
-    if ARGV[0]
-      
-      if File.exist?(comp)
-
-        fileSize = File.size(comp) 
-        puts "The file has #{fileSize} bytes on disk."
-
-        return fileSize
-
-        exit 1;   
-      end
-    end
+    pn = Pathname.new(x)
+    size = pn.size   
+    puts "The file has #{size} bytes on disk."
+    return size
  end
 
  # sha1 digest for a file at the given path
-
  def DigestFileSha1(x)
 
-  file = ARGV[0]
-  comp = File.basename file # => "mydata.txt"
-  extn = File.extname  file # => ".txt"
+  pn = Pathname.new(x)
+  comp = File.basename pn # => "mydata.txt"
+  extn = File.extname  pn # => ".txt"
 
-  if ARGV[0]
     if File.exist?(comp)
 
       if(extn == ".txt")
 
-      sha_1 = Digest::SHA1.hexdigest(File.read(comp))
+      sha_1 = Digest::SHA1.hexdigest(File.read(pn))
       puts "SHA1 = #{sha_1}"
 
       return sha_1
       end
-      exit 1;   
+      #exit 1;   
     end
-  end
 end
 
 # sha1 digest for a file at the given path
-
 def DigestFileMd5(x)
 
-  file = ARGV[0]
-  comp = File.basename file # => "mydata.txt"
-  extn = File.extname  file # => ".txt"  
+  pn = Pathname.new(x)
+  comp = File.basename pn # => "mydata.txt"
+  extn = File.extname  pn # => ".txt"  
 
-  if ARGV[0]
 
     if File.exist?(comp)
 
@@ -93,5 +66,4 @@ def DigestFileMd5(x)
       end  
       exit 1;   
     end
-  end
 end
