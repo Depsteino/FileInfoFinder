@@ -9,7 +9,7 @@ end
 
 describe '#FindSize' do
   it 'given a path like "/home/kim/mydata.txt", return 129 (e.g., the file is 129 bytes on disk)' do
-    expect(FindSize("mydata.txt")).to eq 44
+    expect(FindSize("mydata.txt")).to eq 43
   end
 end
 
