@@ -1,8 +1,53 @@
-
 # FileInfoFinder
-This Library written in Ruby enables to view info of specific file on a giving path.
 
-# How to use
-1.Make sure you have Ruby development environment setup here is a great guide on how to install Ruby on Windows 10: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-windows-10
+[![Build Status](https://travis-ci.org/Securter/FileInfoFinder.svg?branch=master)](https://travis-ci.org/Securter/FileInfoFinder)
+FileInfoFinder written in Ruby Langauge, provides Info of a text file based on a giving path inside the main.rb file.
 
-2.Launch CMD\bash navigate to the FileInfoFinder folder and run the following command “ruby main.rb” this will test the the local file mydata.txt, you may change it in the main.rb to another path if you want instead of the mydata.txt provided with this lib.
+# What it does?
+
+        - Prints out the filename from an absulute path.
+        - Prints out the file Size.
+        - SHA1 digest the text file and prints the hash key.
+        - MD5 digest the text file and prints the hash key.
+
+
+
+### Easy Navigation
+
+Here are some links of FileInfoFinder repo to help you navigate easily between the files.
+
+| File | Path |
+| ------ | ------ |
+| Main file  | [FileInfoFinder/lib/findInfo.rb] [1] |
+| File Functions | [FileInfoFinder/lib/findInfo.rb] [2] |
+| Test Unit | [FileInfoFinder/spec/example_spec.rb] [3] |
+
+
+### Documentation 
+
+Here are some useful tutorials and guides:
+* [DigitalOcean] - Great Tutorial on how to install linux bash on windows 10!
+* [RSpec] - learn how to create unit tests using RSpec
+
+### How to Run this File
+
+Make sure you have your environment working and downloaded this repo to your desktop.
+Open the terminal and navigate to FileInfoFinder directory:
+```sh
+$ ruby main.rb
+NOTE: This will print out the info of the "mydata.txt" file.
+NOTE: If you would like to test with another text file simply change the path name inside of the "main.rb".
+```
+
+License
+----
+[MIT]
+    
+   [RSpec]: <http://rspec.info/>
+   [DigitalOcean]: <https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-windows-10>
+   [MIT]: <https://github.com/Securter/FileInfoFinder/blob/master/LICENSE>
+   [1]: <https://github.com/Securter/FileInfoFinder/blob/master/main.rb>
+   [2]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/findInfo.rb>
+   [3]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/example_spec.rb>
+  
+
