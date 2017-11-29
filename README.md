@@ -1,6 +1,8 @@
 # FileInfoFinder
 
 [![Build Status](https://travis-ci.org/Securter/FileInfoFinder.svg?branch=master)](https://travis-ci.org/Securter/FileInfoFinder)
+
+
 FileInfoFinder written in Ruby Langauge, provides Info of a text file based on a giving path inside the main.rb file.
 
 # What it does?
@@ -11,16 +13,15 @@ FileInfoFinder written in Ruby Langauge, provides Info of a text file based on a
         - MD5 digest the text file and prints the hash key.
 
 
-
 ### Easy Navigation
 
 Here are some links of FileInfoFinder repo to help you navigate easily between the files.
 
 | File | Path |
 | ------ | ------ |
-| Main file  | [FileInfoFinder/lib/findInfo.rb] [1] |
-| File Functions | [FileInfoFinder/lib/findInfo.rb] [2] |
-| Test Unit | [FileInfoFinder/spec/example_spec.rb] [3] |
+| Main file  | [FileInfoFinder/main.rb] |
+| File Functions | [FileInfoFinder/lib/findInfo.rb] |
+| Test Unit | [FileInfoFinder/spec/example_spec.rb]  |
 
 
 ### Documentation 
@@ -46,8 +47,8 @@ License
    [RSpec]: <http://rspec.info/>
    [DigitalOcean]: <https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-windows-10>
    [MIT]: <https://github.com/Securter/FileInfoFinder/blob/master/LICENSE>
-   [1]: <https://github.com/Securter/FileInfoFinder/blob/master/main.rb>
-   [2]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/findInfo.rb>
-   [3]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/example_spec.rb>
+   [FileInfoFinder/main.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/main.rb>
+   [FileInfoFinder/lib/findInfo.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/findInfo.rb>
+   [FileInfoFinder/spec/example_spec.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/example_spec.rb>
   
 
