@@ -1,7 +1,7 @@
 #Use this main to test the functions find.rb
-
 require_relative 'lib/findInfo.rb'  
 
+# File path you can change here (.txt only) 
 fileArg= "mydata.txt"
 
 # Task 1 filename without path. 
