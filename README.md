@@ -21,7 +21,7 @@ Here are some links of FileInfoFinder repo to help you navigate easily between t
 | ------ | ------ |
 | Main file  | [FileInfoFinder/main.rb] |
 | File Functions | [FileInfoFinder/lib/findInfo.rb] |
-| Test Unit | [FileInfoFinder/spec/example_spec.rb]  |
+| Test Unit | [FileInfoFinder/spec/testUnit.rb]  |
 
 
 ### Documentation 
