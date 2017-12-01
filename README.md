@@ -49,6 +49,6 @@ License
    [MIT]: <https://github.com/Securter/FileInfoFinder/blob/master/LICENSE>
    [FileInfoFinder/main.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/main.rb>
    [FileInfoFinder/lib/findInfo.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/findInfo.rb>
-   [FileInfoFinder/spec/example_spec.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/example_spec.rb>
+   [FileInfoFinder/spec/testUnit.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/testUnit_spec.rb>
   
 
