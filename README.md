@@ -14,9 +14,9 @@ Make sure you have your environment working and downloaded this repo to your des
 Open the terminal and navigate to FileInfoFinder directory:
 ```sh
 $ ruby main.rb
-NOTE: This will print out the info of the "mydata.txt" file.
-NOTE: If you would like to test with another text file simply change the path name inside of the "main.rb".
 ```
+
+**NOTE**: If you would like to test with another text file simply change the path name inside of the "main.rb".
 
 ## Navigation
 
