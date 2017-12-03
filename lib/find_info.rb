@@ -35,7 +35,7 @@ def digest_file_sha1(x)
   sha1 = Digest::SHA1.hexdigest(File.read(pn))
   puts "SHA1 = #{sha1}"
 
-  sha_1
+  sha1
 end
 
 # Returns the md5 digest for a file at the given path
@@ -49,5 +49,5 @@ def digest_file_md5(x)
   md5 = Digest::MD5.hexdigest(File.read(comp))
   puts "MD5 = #{md5}"
 
-  md_5
+  md5
 end
