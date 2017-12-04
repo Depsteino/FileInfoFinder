@@ -31,8 +31,8 @@ Below are some helpful links to navigate the repo:
 | Contents | Location |
 | ------ | ------ |
 | Main file  | [main.rb] |
-| File Functions | [lib/findInfo.rb] |
-| Test Unit | [spec/testUnit.rb]  |
+| File Functions | [lib/find_info.rb] |
+| Test Unit | [spec/test_unit_spec.rb]  |
 
 ## Additional Resources
 
@@ -48,5 +48,5 @@ Below are some useful tutorials and guides:
  [DigitalOcean]: <https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-windows-10>
  [MIT]: <https://github.com/Securter/FileInfoFinder/blob/master/LICENSE>
  [main.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/main.rb>
- [lib/findInfo.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/findInfo.rb>
- [spec/testUnit.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/testUnit_spec.rb>
+ [lib/findInfo.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/lib/find_info.rb>
+ [spec/testUnit.rb]: <https://github.com/Securter/FileInfoFinder/blob/master/spec/test_unit_spec.rb>
