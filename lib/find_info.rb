@@ -6,12 +6,8 @@ require 'pathname'
 # Returns the file name without path
 # For example: given a path like "/home/kim/mydata.txt", return "mydata.txt"
 def find_path(x)
-  file = x
-  comp = File.basename file # => "mydata.txt"
-
-  return unless File.exist?(comp)
-  puts comp
-  comp
+  return unless File.exist?(File.basename x)
+  File.basename x
 end
 
 # Returns the file size in bytes
@@ -19,9 +15,7 @@ end
 # (e.g., the file is 129 bytes on disk)
 def find_size(x)
   pn = Pathname.new(x)
-  size = pn.size
-  puts "The file has #{size} bytes on disk."
-  size
+  pn.size
 end
 
 # Returns the Sha1 digest for a file at the given path
@@ -32,10 +26,7 @@ def digest_file_sha1(x)
 
   return unless File.exist?(comp)
   return unless extn == '.txt'
-  sha1 = Digest::SHA1.hexdigest(File.read(pn))
-  puts "SHA1 = #{sha1}"
-
-  sha1
+  Digest::SHA1.hexdigest(File.read(pn))
 end
 
 # Returns the md5 digest for a file at the given path
@@ -46,8 +37,5 @@ def digest_file_md5(x)
 
   return unless File.exist?(comp)
   return unless extn == '.txt'
-  md5 = Digest::MD5.hexdigest(File.read(comp))
-  puts "MD5 = #{md5}"
-
-  md5
+  Digest::MD5.hexdigest(File.read(comp))
 end

@@ -18,6 +18,12 @@ $ ruby main.rb
 
 **NOTE**: If you would like to test with another text file simply change the path name inside of the "main.rb".
 
+## Unit tests
+
+Initial unit tests have been integrated to simplify testing. To run them on your local machine, simply execute:
+
+`rspec spec`
+
 ## Navigation
 
 Below are some helpful links to navigate the repo:
