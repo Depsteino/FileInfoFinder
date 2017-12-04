@@ -31,8 +31,8 @@ Below are some helpful links to navigate the repo:
 | Contents | Location |
 | ------ | ------ |
 | Main file  | [main.rb] |
-| File Functions | [lib/find_info.rb] |
-| Test Unit | [spec/test_unit_spec.rb]  |
+| File Functions | [lib/findinfo.rb] |
+| Test Unit | [spec/testunit.rb]  |
 
 ## Additional Resources
 
